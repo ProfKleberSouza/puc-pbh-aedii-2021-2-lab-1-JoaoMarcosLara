@@ -1,2 +1,2 @@
 
-int menor_num(int vet, int n);
+int menor(int vet[],int t);
