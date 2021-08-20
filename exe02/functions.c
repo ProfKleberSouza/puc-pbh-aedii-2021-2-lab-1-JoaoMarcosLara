@@ -1,7 +1,11 @@
 
 #include "functions.h"
 
-int somar(int n1, int n2){
-
-    return n1+n2;
+int menor_num(int vet[], int n){
+int menor = vet[0];
+for(int i = 0;i<n;i++){
+  if(menor > vet[i])
+  menor = vet[i];
+}
+return menor;
 }
