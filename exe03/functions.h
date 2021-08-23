@@ -1,2 +1,2 @@
 
-int somar(int n1, int n2);
+int maior_menor(int vet[],int t,int *a,int *b);

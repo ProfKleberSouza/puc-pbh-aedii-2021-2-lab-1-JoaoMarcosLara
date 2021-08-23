@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "functions.h"
-#define MAX 10
+#define MAX 50
+//defini no maximo 50 numeros para o vetor
 
 int main() {
 int t=0;

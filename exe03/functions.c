@@ -1,7 +1,18 @@
 
 #include "functions.h"
 
-int somar(int n1, int n2){
 
-    return n1+n2;
+int maior_menor(int vet[],int t,int *a,int *b){
+    int menor = vet[1];
+    int maior = vet[0];
+    for(int i = 0; i<t ;i++){
+        if(vet[i] < menor ){
+            menor = vet[i];
+        }
+        else if(maior < vet[i]){
+            maior = vet[i];
+        }
+    }
+    *a = menor;
+    *b = maior;
 }
