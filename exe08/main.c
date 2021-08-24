@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include "functions.h"
+#include <string.h>
 
 int main() {
-
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+int b;
+int k = 15;
+char palavra[k];
+fflush(stdin);
+printf("digite uma palavra: ");
+scanf("%s", palavra);
+fflush(stdin);
+b = exercicio2(palavra);
+if(b == 1){
+  printf("%d , ou seja a palvrava e um palindromo",b);
+  }
+  else{
+  printf("%d , ou seja a palvrava nao e um palindromo",b);
+            }
 }
