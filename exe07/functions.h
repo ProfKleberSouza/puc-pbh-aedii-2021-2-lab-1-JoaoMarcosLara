@@ -1,2 +1,2 @@
 
-int somar(int n1, int n2);
+int MDC(int num1,int num2);

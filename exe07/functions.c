@@ -1,7 +1,14 @@
 
 #include "functions.h"
 
-int somar(int n1, int n2){
-
-    return n1+n2;
+int MDC(int num1,int num2){
+  if(num1 == num2){
+    return num1;
+    }
+  else if(num1 > num2){
+    MDC(num1-num2,num2);
+  
+  }else if(num1 < num2){
+    MDC(num2,num1);
+  }
 }
