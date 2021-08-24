@@ -1,7 +1,12 @@
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "functions.h"
 
-int somar(int n1, int n2){
+void inverter(char text[]){
+  int tamanho = strlen(text);
+  for(int i = tamanho-1; i > 0;i--){
+    printf("%s",text[i]);
+  }
 
-    return n1+n2;
 }
