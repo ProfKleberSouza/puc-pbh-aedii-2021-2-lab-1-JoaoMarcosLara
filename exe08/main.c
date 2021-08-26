@@ -10,7 +10,7 @@ int main() {
   fgets(text,100,stdin);
   a = palindromo(text);
 
-  if(a == 44){
+  if(a == 0){
     printf("nao");
   }else{
     printf("sim");

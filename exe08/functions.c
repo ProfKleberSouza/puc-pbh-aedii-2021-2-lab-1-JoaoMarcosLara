@@ -5,6 +5,7 @@
 #include <string.h>
 
 int palindromorec(char text[],int j,int pos){
+    int v;
     if(text[pos] == text[j]){
        if(j >= pos){
             pos++;
@@ -12,10 +13,10 @@ int palindromorec(char text[],int j,int pos){
             palindromorec(text,j,pos);
         }
         else{
-            return 33;
+            return 1;
         }
     }else{
-    return  44;
+    return  0;
     }
 }
 int palindromo(char text[]){
@@ -23,7 +24,6 @@ int palindromo(char text[]){
   int s;
   int j = strlen(text) - 2;
   s = palindromorec(text,j,pos);
-  printf("%d",s);
 
   return s;
 
