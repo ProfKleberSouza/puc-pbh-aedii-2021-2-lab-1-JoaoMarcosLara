@@ -1,2 +1,2 @@
-
-int somar(int n1, int n2);
+int palindromo(char text[]);
+int palindromorec(char text[],int j,int tamanho,int pos);

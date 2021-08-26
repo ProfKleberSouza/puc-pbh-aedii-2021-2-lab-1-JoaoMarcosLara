@@ -5,7 +5,7 @@
 
 int main() {
   char text[100];
-  gets(text);
+  fgets(text,100,stdin);
   contador(text);
   return(0);
 }

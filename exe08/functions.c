@@ -1,16 +1,24 @@
-
+#include <stdio.h>
 #include "functions.h"
+#include <string.h>
+#include <stdlib.h>
 
-int palindromo(char palavra[])
-{
-    int tamanho;
-    tamanho = strlen(palavra);
-    for (int i = 0; i < tamanho / 2; i++)  //só irá até o meio
-    {
-        if (palavra[i] != palavra[tamanho - i - 1])
-        {
-            return -1;
-        }
+int palindromorec(char text[],int j,int tamanho,int pos){
+  if(tamanho % 2 == 0 && j >= tamanho/2){
+    if(text[pos] == text[j]){
+      palindromorec(text,j-1,tamanho,pos+1);
+      return 1;
+    }else{
+      return 0;
     }
-    return 1;
+    
+  }
+
+}
+int palindromo(char text[]){
+  int pos = 0;
+  int j = strlen(text);
+  int tamanho = strlen(text);
+  return palindromorec(text,j,tamanho,pos);
+  
 }
