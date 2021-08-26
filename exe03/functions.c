@@ -2,7 +2,7 @@
 #include "functions.h"
 
 
-int maior_menor(int vet[],int t,int *a,int *b){
+void maior_menor(int vet[],int t,int *a,int *b){
     int menor = vet[1];
     int maior = vet[0];
     for(int i = 0; i<t ;i++){
