@@ -1,2 +1,2 @@
-
-int somar(int n1, int n2);
+void tabela_verdade(int num);
+void tabela_verdade_rec(char tabela[], int num, int pos);
